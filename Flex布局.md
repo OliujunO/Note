@@ -2,11 +2,11 @@
 
 ---
 
-网页布局（layout）是CSS的一个重点应用。
+网页布局（layout）是**CSS3**的一个重点应用。
 
-布局的传统解决方案，基于**盒状模型**，依赖 `display`属性 + `position`属性 + `float`属性。它对于那些特殊布局非常不方便，比如，**垂直居中**就不容易实现。
+布局的传统解决方案，基于**盒状模型**，依赖 `display`属性 +  `position`属性 +  `float`属性。它对于那些特殊布局非常不方便，比如，**垂直居中**、**自适应**、**流式布局**就不容易实现。
 
-2009年，W3C提出了一种新的方案----**Flex**布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。
+2009年，W3C提出了一种新的方案----**Flex**布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了**所有浏览器的支持**，这意味着，现在就能很安全地使用这项功能。
 
 ![browser-support](pics/flex/browser-support.jpg)
 
@@ -19,7 +19,7 @@ Flex是Flexible Box的缩写，意为**弹性布局**，用来为盒状模型提
 任何一个容器都可以指定为Flex布局。
 
 ```css
-.box{
+.box {
   display: flex;
 }
 ```
@@ -27,7 +27,7 @@ Flex是Flexible Box的缩写，意为**弹性布局**，用来为盒状模型提
 行内元素也可以使用Flex布局。
 
 ```css
- .box{
+ .box {
    display: inline-flex;
  }
 ```
@@ -35,7 +35,7 @@ Flex是Flexible Box的缩写，意为**弹性布局**，用来为盒状模型提
 Webkit内核的浏览器，必须加上`-webkit`前缀。
 
 ```css
- .box{
+ .box {
    display: -webkit-flex; /* Safari */
    display: flex;
  }
@@ -90,7 +90,7 @@ Webkit内核的浏览器，必须加上`-webkit`前缀。
 ![flex-wrap](pics/flex/flex-wrap.png)
 
 ```css
- .box{
+ .box {
    flex-wrap: nowrap | wrap | wrap-reverse;
  }
 ```
